@@ -1,3 +1,6 @@
+
+// variables
+
 var buttonColours = ["red","blue","yellow","green"];
 var randomChosenColour;
 var gamePattern =[];
@@ -8,6 +11,8 @@ var i=0;
 var n=0;
 var m=0;
 
+
+// key press function
 
 $(document).keypress( function (){
   userPattern =[];
@@ -24,6 +29,7 @@ $(document).keypress( function (){
 });
 
 
+// click function
 
 $(".btn").click(function() {
      userChosenColour = event.srcElement.id
@@ -50,14 +56,7 @@ $(".btn").click(function() {
             }
 });
 
-
-
-
-
-
-
-
-
+// sound function
 
 function makeSound(key) {
 switch (key) {
